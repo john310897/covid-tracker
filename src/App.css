@@ -1,0 +1,52 @@
+*{
+  margin: 0;
+}
+body{
+  background-color: lightgoldenrodyellow;
+}
+.app_header{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin: 20px;
+}
+.total__status{
+  display: flex;
+  justify-content: space-between;
+}
+.main__parent{
+  display: flex;
+  justify-content: space-evenly;
+}
+.app__left{
+  flex:0.7;
+}
+.app__table{
+  height: 450px;
+  overflow: scroll;
+  scroll-behavior: smooth;
+  overflow-x: hidden;
+}
+.app__table tr td{
+  padding: 10px;
+}
+.app__table tr:nth-child(even) {
+  background-color: #f2f2f2;
+}
+.active_status:hover{
+  cursor: pointer;
+}
+.app_graph{
+  width: 700px;
+}
+@media only screen and (max-width:500px) {
+  .main__parent {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    flex:0.10;
+  }
+  .app_graph {
+    width: 500px;
+  } 
+  }
